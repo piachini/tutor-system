@@ -2,20 +2,23 @@ Il progetto è a supporto delle lezioni del corso TPSI V anno sulle architetture
 
 Tutor-System Backend
 
-Descrizione
 Implementa un sistema per registrare e gestire i passaggi delle automobili in postazioni di controllo.
 Calcola la velocità media tra le postazioni, tenendo conto della distanza tra le stesse.
 Segnala le infrazioni quando la velocità media supera i 130 km/h.
 Salva i dati in un database PostgreSQL, con tabelle per postazioni e passaggi.
 
+
 Struttura del database
+
 Tabella postazioni:
 - Contiene l'identificativo della postazione e la posizione chilometrica.
 
 Tabella passaggi:
 - Registra i passaggi delle auto con targa, ID della postazione e orario.
 
+
 Endpoint REST
+
 - POST /passaggi: registra un passaggio.
 - GET /velocita: calcola la velocità media tra le postazioni per ogni auto.
 - GET /infrazioni: restituisce le infrazioni.
