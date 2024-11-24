@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sistema Tutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sistema Tutor</h1>
+
+        <!-- Modulo inserimento passaggio -->
+        <section>
+            <h2>Inserisci un Passaggio</h2>
+            <form id="passaggi-form">
+                <input type="text" id="targa" placeholder="Targa" required>
+                <input type="number" id="postazione" placeholder="Postazione" required>
+                <input type="datetime-local" id="orario" required>
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+
+        <!-- Tabelle dinamiche -->
+        <section>
+            <h2>Velocità Medie</h2>
+            <table>
+                <thead>
+                    <tr>
+                      <th class="center">TARGA</th>
+                      <th>Post. Prec.</th>
+                      <th>Post. Succ.</th>
+                      <th class="center">Dist. (km)</th>
+                      <th class="center">Vel. Media</th>
+                    </tr>
+                  </thead>
+                  <tbody id="velocita-tbody">
+
+                  </tbody>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>Infrazioni</h2>
+            <table>
+                <thead>
+                    <tr>
+                      <th class="center">TARGA</th>
+                      <th>Post. Prec.</th>
+                      <th>Post. Succ.</th>
+                      <th class="center">Vel. Rilev.</th>
+                    </tr>
+                  </thead>
+                  <tbody id="infrazioni-tbody">
+
+                  </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
